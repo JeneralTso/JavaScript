@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Pizza Menu</title>
+		<!-- <link rel="stylesheet" href="./css/pizzaStyles.css"> -->
+		<script src="tsoJenny_pizzaScript.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<h1>It's People! Pizza Menu</h1>
+			</div>
+			<form name="orderForm">
+				<div class="menus">
+					<div class="menuText">
+						<h2>Size</h2>
+						<input class="size" type="radio" name="Size" value="Personal Size Pizza" />Personal: $6.00<br />
+						<input class="size" type="radio" name="Size" value="Medium Pizza" />Medium: $10.00<br />
+						<input class="size" type="radio" name="Size" value="Large Pizza" />Large: $14.00<br />
+						<input class="size" type="radio" name="Size" value="Extra Large Pizza" />Extra Large: $16.00<br />
+					</div>
+				</div>
+				<div class="menus">
+					<div class="menuText">
+						<h2>Crust</h2>
+						<input class="crust" type="radio" name="Crust" value="Plain Crust" />Plain Crust<br />
+						<input class="crust" type="radio" name="Crust" value="Garlic Butter Crust" />Garlic Butter Crust<br />
+						<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust" />Cheese Stuffed Crust<br />
+						<input class="crust" type="radio" name="Crust" value="Spicy Crust" />Spicy Crust<br />
+						<input class="crust" type="radio" name="Crust" value="House Special Crust" />House Special Crust<br />
+					</div>
+				</div>
+				<div class="menus">
+					<div class="menuText">
+						<h2>Sauce</h2>
+						<input class="sauce" type="radio" name="Sauce" value="Marinara Sauce" />Marinara Sauce<br />
+						<input class="sauce" type="radio" name="Sauce" value="White Sauce" />White Sauce<br />
+						<input class="sauce" type="radio" name="Sauce" value="BBQ Sauce" />BBQ Sauce<br />
+						<input class="sauce" type="radio" name="Sauce" value="No Sauce" />No Sauce<br />
+					</div>
+				</div>
+				<div class="menus">
+					<div class="menuText">
+						<h2>Cheese</h2>
+						<input class="cheese" type="radio" name="Cheese" value="Regular" />Regular<br />
+						<input class="cheese" type="radio" name="Cheese" value="No Cheese" />No Cheese<br />
+						<input class="cheese" type="radio" name="Cheese" value="Extra Cheese" />Extra Cheese: $3.00<br />
+					</div>
+				</div>
+				<div class="menus">
+					<div class="menuText">
+						<h2>Meats</h2>
+						<input class="meats" type="checkbox" name="Meats" value="Pepperoni" />Pepperoni<br />
+						<input class="meats" type="checkbox" name="Meats" value="Sausage" />Sausage<br />
+						<input class="meats" type="checkbox" name="Meats" value="Canadian Bacon" />Canadian Bacon<br />
+						<input class="meats" type="checkbox" name="Meats" value="Ground Beef" />Ground Beef<br />
+						<input class="meats" type="checkbox" name="Meats" value="Anchovy" />Anchovy<br />
+						<input class="meats" type="checkbox" name="Meats" value="Chicken" />Chicken<br />
+						<input class="meats" type="checkbox" name="Meats" value="Long Pig" />Long Pig<br />
+					</div>
+				</div>
+				<div class="menus">
+					<div class="menuText">
+						<h2>Veggies</h2>
+						<input class="veggies" type="checkbox" name="Veggies" value="Tomatoes" />Tomatoes<br />
+						<input class="veggies" type="checkbox" name="Veggies" value="Onions" />Onions<br />
+						<input class="veggies" type="checkbox" name="Veggies" value="Olives" />Olives<br />
+						<input class="veggies" type="checkbox" name="Veggies" value="Green Peppers" />Green Peppers<br />
+						<input class="veggies" type="checkbox" name="Veggies" value="Mushrooms" />Mushrooms<br />
+						<input class="veggies" type="checkbox" name="Veggies" value="Pineapple" />Pineapple<br />
+						<input class="veggies" type="checkbox" name="Veggies" value="Spinach" />Spinach<br />
+						<input class="veggies" type="checkbox" name="Veggies" value="Jalapeno" />Jalapeno<br />
+						<input class="veggies" type="checkbox" name="Veggies" value="Soylent Green" />Soylent Green<br />
+					</div>
+				</div>
+				<div id="orderButton">
+					<input type="button" value="Place Order" onclick="Total()">
+				</div>
+				<div id="total">
+					<h2>Your Total: </h2>
+					<div id="invoiceText"></div>
+					<div id="totalPrice"></div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
